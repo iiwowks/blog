@@ -1,0 +1,34 @@
+
+<script src="{{ site.baseurl }}/js/jquery-1.12.0.min.js"></script>
+<!-- <script src="{{ site.baseurl }}/js/jquery.fitvids.js"></script> -->
+{% if page.syntaxhighlight != false %}
+<script src="{{ site.baseurl }}/js/prism.js"></script>
+{% endif %}
+{% if page.photoswipe %}
+<script src="{{ site.baseurl }}/js/photoswipe.js"></script>
+<script src="{{ site.baseurl }}/js/photoswipe-ui-default.js"></script>
+{% endif %}
+<script src="{{ site.baseurl }}/js/post.js"></script>
+
+<!-- Disqus -->
+<script type="text/javascript">
+  var config = {
+    'disqus_shortname': '{{ site.disqus_shortname }}'
+  };
+</script>
+
+<!-- Prism -->
+{% if page.syntaxhighlight != false %}
+<script type="text/javascript">
+  Prism.languages.bash.prompt = /^\$ /m; // 字句解析でPromptの部分もtokenにする
+
+  Prism.languages.vb = Prism.languages.vbnet; // Markdownで言語を「vb」としたときに、Prism.jsの「vbnet」を適用する
+</script>
+
+<style>
+  /* Propmtの部分は選択できないように（コピーしないように）する */
+  .token.prompt {
+    user-select: none;
+  }
+</style>
+{% endif %}

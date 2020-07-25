@@ -1,0 +1,63 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: "iiwowks"
+subtitle: ""
+description: "personal blog"
+keywords: Programming
+language: zh # default language of the blog. Language codes: http://www.w3schools.com/tags/ref_language_codes.asp
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url:     "https://iiwowks.github.io" # the base hostname & protocol for your site. Have a look at robots.txt as well!
+permalink: /:categories/:title
+cover:     /assets/cover1.jpg
+disqus_shortname: "iiwowks"
+
+# Build settings
+markdown: kramdown
+kramdown:
+  # 数式はKaTeXでレンダリングする
+  math_engine: mathjax # katex
+  math_engine_opts: {}
+  # 数式で'が別文字に変換するのを防ぐための設定
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+  # Prism.jsでシンタックスハイライトするため
+  syntax_highlighter_opts:
+    disable: true
+include:
+  - _pages
+exclude:
+  - .bundle
+  - .git
+  - .gitignore
+  - .jekyll-metadata
+  - .sass-cache
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - new.sh
+  - server.sh
+  - Makefile
+  - LICENSE
+  - README.md
+  - _drafts
+keep_files:
+  - api
+  - assets
+  - css
+  - fonts
+  - js
+  - media
+plugins:
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+jekyll-mentions:
+  base_url: https://twitter.com
