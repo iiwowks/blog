@@ -1,11 +1,13 @@
 ---
 layout:        post
-title:         "markdown测试用例"
-date:          2020-07-05
+title:         "Markdown测试用例"
+date:          2020-07-26
 category:      Markdown
 author:        iiwowks
 published:     true
 photoswipe:    true
+latex:         true
+# comments:      true
 ---
 
 ---
