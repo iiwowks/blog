@@ -312,7 +312,7 @@ $$
 *attention*
 :::
 
-# small size
+## small size
 
 ```
 <small>
@@ -323,5 +323,27 @@ paragraphs
 paragraphs
 </small>
 
+### Abbreviations
+
+```
+This is an html example.
+*[html]: Hyper Text Markup Language
+```
+
+This is an html example.
+*[html]: Hyper Text Markup Language
+
+
+## HTML Elements
+
+```
+This is <span style="color: red">written in red</span>
+```
+
+This is <span style="color: red">written in red</span>
+
+### Inline Attributes
+
+This is *red*{: style="color: red"}.
 
 ***
