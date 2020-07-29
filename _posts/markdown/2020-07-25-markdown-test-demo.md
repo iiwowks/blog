@@ -331,8 +331,8 @@ This is an html example.
 ```
 
 This is an html example.
-*[html]: Hyper Text Markup Language
 
+*[html]: Hyper Text Markup Language
 
 ## HTML Elements
 
@@ -343,6 +343,10 @@ This is <span style="color: red">written in red</span>
 This is <span style="color: red">written in red</span>
 
 ### Inline Attributes
+
+```
+This is *red*{: style="color: red"}.
+```
 
 This is *red*{: style="color: red"}.
 

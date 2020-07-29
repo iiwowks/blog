@@ -1,10 +1,10 @@
 ---
 layout:    post
 title:     "java foundation"
-date:       2020-03-20
+date:      2020-03-20
 category:  Java
 author:    iiwowks
-published:     true
+published: true
 ---
 
 ## Java核心类

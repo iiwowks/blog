@@ -1,10 +1,10 @@
 ---
 layout:    post
 title:     "mysql learn"
-date:       2020-07-23
+date:      2020-07-23
 category:  Mysql
 author:    iiwowks
-published:     true
+published: true
 ---
 
 > * https://shockerli.net/post/1000-line-mysql-note/
