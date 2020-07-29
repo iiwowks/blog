@@ -22,6 +22,9 @@ section,
 summary { 
     display:block; 
 }
+summary:focus{
+    outline: none;
+}
 
 audio,
 canvas,
