@@ -1,6 +1,6 @@
 ---
 layout:        post
-title:         "YAML 自定义功能"
+title:         "YAML 页面设置"
 date:          2020-07-05
 category:      Markdown
 author:        iiwowks
