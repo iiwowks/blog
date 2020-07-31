@@ -26,7 +26,7 @@ excerpt:   This page contains the curriculum vitae (CV) of the author.
     <summary> <b> <samp> Most used languanges </samp></b></summary>
     <samp>
         <img align="middle"
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=iiwowks&hide_title=true&layout=compact" />
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=iiwowks&hide=javascript&hide_title=true&layout=compact" />
     </samp>
 </details>
 
@@ -47,7 +47,7 @@ excerpt:   This page contains the curriculum vitae (CV) of the author.
     </details>
 </div>
 
-<h1 align="middle">skills</h1>
+<h2 align="middle">skills</h2>
 
 [![Java](https://img.shields.io/badge/-Java-b07219?style=flat-square&logo=java)]({{site.baseurl}}/#java)
 ![Python](https://img.shields.io/badge/-Python-00599C?style=flat-square&logo=python)

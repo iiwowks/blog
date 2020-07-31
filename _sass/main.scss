@@ -1,6 +1,6 @@
 // header
 .main-header {
-    margin-bottom: 30px;
+    margin-bottom: 1rem;
     padding-top: 1rem;
     background-size: cover;
     background-position: center;
@@ -12,12 +12,30 @@
         .nav a {
             color: black;
             // text-shadow: 1px 1px 5px rgba($color-black, 0.5);
-            font-size: xx-large;
+            font-size: x-large;
             font-weight: bolder;
+
+        }
+        .nav a:hover{
+            color:white;
+            background-color: black;
+            // text-decoration:underline;
+            // text-decoration-color: red;
+            text-decoration:none;
         }
 
         .nav {
-            &:before, &:after {
+            // &:before, &:after {
+            //     // background: linear-gradient(to right, rgba($color-white, 0) 0%,rgba($color-white, 1) 50%,rgba($color-white, 0) 100%);
+            //     background: black;
+            //     height: 0.5px;
+            // }
+            &:after {
+                // background: linear-gradient(to right, rgba($color-white, 0) 0%,rgba($color-white, 1) 50%,rgba($color-white, 0) 100%);
+                background: black;
+                height: 0.5px;
+            }
+            &:before {
                 background: linear-gradient(to right, rgba($color-white, 0) 0%,rgba($color-white, 1) 50%,rgba($color-white, 0) 100%);
             }
         }
@@ -77,8 +95,9 @@
     content: '';
     display: block;
     width: 100%;
-    height: 1px;
-    background: linear-gradient(to right, rgba($color-black,0) 0%,rgba($color-black,1) 50%,rgba(0,0,0,0) 100%);
+    height: 0.5px;
+    // background: linear-gradient(to right, rgba($color-black,0) 0%,rgba($color-black,1) 50%,rgba(0,0,0,0) 100%);
+    background:black;
 }
 
 // post list
