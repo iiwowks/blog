@@ -195,6 +195,11 @@ H<sub>2</sub>O
 
 * H<sub>2</sub>O
 
+```
+* 19<sup>th</sap>
+```
+
+* 19<sup>th</sap>
 
 ### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
 
