@@ -189,6 +189,12 @@ see [how to change output](https://github.com/markdown-it/markdown-it-emoji#chan
 - 19^th^
 - H~2~O
 
+```
+H<sub>2</sub>O
+```
+
+* H<sub>2</sub>O
+
 
 ### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
 
@@ -199,6 +205,17 @@ see [how to change output](https://github.com/markdown-it/markdown-it-emoji#chan
 
 ==Marked text==
 
+```
+<mark>Marked text</mark>
+```
+
+<mark>Marked text</mark>
+
+```
+<mark style="background-color: red">Marked text</mark>
+```
+
+<mark style="background-color: red">Marked text</mark>
 
 ### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
 
