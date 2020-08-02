@@ -1,10 +1,10 @@
 ---
 layout:    post
-title:     "数组、链表、跳表"
+title:     "数组 链表 跳表"
 date:      2020-07-30
 category:  Algorithm
 author:    iiwowks
-published: false
+published: true
 ---
 ## 参考链接
 
