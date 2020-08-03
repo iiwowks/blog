@@ -6,6 +6,7 @@ category:   Algorithm
 author:     iiwowks
 published:  true
 photoswipe: true
+syntaxhighlight: false
 ---
 
 ## 二叉树节点定义

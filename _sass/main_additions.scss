@@ -9,6 +9,16 @@
     bottom: auto;
 
 }
+.toggle-code-block {
+    display: block;
+    background-image: url('../assets/avatar.jpg');
+    border-radius: 25px;
+    top: 90px;
+    bottom: auto;
+}
+.toggle-code-block:focus{
+    outline: none;
+}
 
 /* hide that style in our layout */ 
 .author-info:after {
