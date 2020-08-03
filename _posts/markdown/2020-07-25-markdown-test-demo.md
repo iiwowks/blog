@@ -217,10 +217,10 @@ H<sub>2</sub>O
 <mark>Marked text</mark>
 
 ```
-<mark style="background-color: red">Marked text</mark>
+<mark style="background-color: green">Marked text</mark>
 ```
 
-<mark style="background-color: red">Marked text</mark>
+<mark style="background-color: green">Marked text</mark>
 
 ### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
 

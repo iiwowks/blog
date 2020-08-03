@@ -3,7 +3,7 @@ code,
 pre {
     color: black;
     background: none;
-    text-shadow: 0 1px white;
+    // text-shadow: 0 1px white;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     text-align: left;
     white-space: pre-wrap;
@@ -44,15 +44,17 @@ code::selection, code ::selection {
 pre {
     padding: 1em;
     margin: 1em 0;
+    //设置所有代码块最大高度
+    max-height: 300px;
 }
 
 pre code {
     display: block;
     width: 90%;
     max-width: 650px;
-    // 代码块行高
-    max-height: 300px;
     margin: auto;
+    background-color: $base-grey-10;
+    // background: rgba(250,250,250,0.8);
 }
 /*滚动条样式*/
 pre::-webkit-scrollbar {
@@ -72,12 +74,13 @@ pre::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.1);
 }
 */
+// 未渲染代码块的样式
 :not(pre) > code,
 pre {
     // background: rgba(250,250,250,0.8);
-    background: $github-codeblock-background;
-    border-top: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
+    // background: $github-codeblock-background;
+    // border-top: 1px solid #eeeeee;
+    // border-bottom: 1px solid #eeeeee;
 }
 
 /* Inline code */
@@ -85,7 +88,8 @@ pre {
     padding: .1em .2em;
     border-radius: .3em;
     white-space: normal;
-    border: 1px solid #eeeeee;
+    // border: 1px solid #eeeeee;
+    background-color: yellow;
 }
 
 .token.comment,

@@ -7,9 +7,6 @@ author:    iiwowks
 published: true
 ---
 
-> * https://shockerli.net/post/1000-line-mysql-note/
-
-非常不错的总结，强烈建议保存下来，需要的时候看一看。
 
 ### 基本操作
 
@@ -950,3 +947,4 @@ OPTIMIZE [LOCAL | NO_WRITE_TO_BINLOG] TABLE tbl_name [, tbl_name] ...
 7. 清除已有语句：\c
 ```
 
+### [参考链接](https://shockerli.net/post/1000-line-mysql-note/)
