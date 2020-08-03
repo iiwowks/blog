@@ -5,7 +5,8 @@ date:      2020-03-20
 category:  Java
 author:    iiwowks
 published: true
-syntaxhighlight: false
+photoswipe: true
+syntaxhighlight: true
 ---
 
 ## Java核心类
@@ -568,13 +569,3 @@ if (m.matches()) {
 * 分割字符串：`String.split()`
 * 搜索子串：`Matcher.find()`
 * 替换字符串：`String.replaceAll()`
-
-## 设计模式
-
-### 工厂模式
-
-* 工厂模式用于隐藏创建对象的细节
-* 工厂类(Factory)分类：
-  * 简单工厂:
-  * 工厂方法
-  * 抽象工厂
