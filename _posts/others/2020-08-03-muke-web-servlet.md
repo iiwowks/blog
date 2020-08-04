@@ -12,7 +12,7 @@ syntaxhighlight: false
 
 * `http://IP地址:端口/context-path/url-mapping`
 * context-path称为“上下文路径”，默认为工程名
-* 远程访问IP地址，本地访问localhost(127.0.0.1)
+* 远程访问IP地址，本地访问`localhost(127.0.0.1)`
 
 ### servlet生命周期
 

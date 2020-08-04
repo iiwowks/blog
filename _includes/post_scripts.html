@@ -1,18 +1,6 @@
 
 <script src="{{ site.baseurl }}/js/jquery-1.12.0.min.js"></script>
 <!-- <script src="{{ site.baseurl }}/js/jquery.fitvids.js"></script> -->
-<!-- toggle code block button -->
-<script type="text/javascript">
-  function toggleCodeBlock() {
-    const jq_maxHeight = $("pre").css("max-height");
-    if (jq_maxHeight != "none"){
-      $("pre").css({"max-height": "none"});
-    }
-    else{
-      $("pre").css({"max-height": "300px"});
-    }
-  }
-</script>
 
 {% if page.syntaxhighlight != false %}
 <script src="{{ site.baseurl }}/js/prism.js"></script>
