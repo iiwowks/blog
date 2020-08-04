@@ -12,6 +12,33 @@
     var windowHeight = win.height();
     var timeoutHandler;
 
+    /*     
+    //toggle java code block     
+    $('.toggle-code-block').click(function () {
+      var toggleJavaCodeBlock = $('.language-java');
+      const jq_display = toggleJavaCodeBlock.css("display");
+      if (jq_display != "block") {
+        toggleJavaCodeBlock.css({ "display": "block" });
+      }
+      else {
+        toggleJavaCodeBlock.css({ "display": "none" });
+      }
+    }); 
+    */
+
+
+    // toggle all code block
+    $('.toggle-code-block').click(function () {
+      var toggleAllCodeBlock = $('pre');
+      const jq_maxHight = toggleAllCodeBlock.css("max-height");
+      if (jq_maxHight != "none") {
+        toggleAllCodeBlock.css({ "max-height": "none" });
+      }
+      else {
+        toggleAllCodeBlock.css({ "max-height": "0.5rem", "overflow-y": "hidden" });
+      }
+    });
+
     /*
       Fix video size.
      */
@@ -54,7 +81,7 @@
 
       if (figureList.length) {
         figureList.each(function (index, item) {
-            var img = $(item).find('img');
+          var img = $(item).find('img');
           var src = img.attr('src');
           var newImg = new Image();
           newImg.addEventListener('load', function () {
@@ -133,9 +160,9 @@
       Disqus comments
     */
     function loadDisqusComments() {
-      if(config.disqus_shortname != '') {
+      if (config.disqus_shortname != '') {
         var disqus_shortname = config.disqus_shortname;
-        (function() {
+        (function () {
           var dsq = document.createElement('script');
           dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
@@ -146,7 +173,7 @@
       }
     }
 
-    $('.view-comments').click(function(){
+    $('.view-comments').click(function () {
       loadDisqusComments();
       $(this).fadeOut(400);
     });

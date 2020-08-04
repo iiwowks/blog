@@ -5,6 +5,7 @@ date:      2020-07-23
 category:  Mysql
 author:    iiwowks
 published: true
+syntaxhighlight: false
 ---
 
 

@@ -44,8 +44,6 @@ code::selection, code ::selection {
 pre {
     // padding: 1em;
     margin: 1em 0;
-    //设置所有代码块最大高度
-    // max-height: 400px;
 }
 
 pre code {
@@ -58,23 +56,23 @@ pre code {
     // background: rgba(250,250,250,0.8);
 }
 /*滚动条样式*/
-pre::-webkit-scrollbar {
-    width: 4px;
+::-webkit-scrollbar {
+    width: 5px;
     height: 4px;
 }
-pre::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     // background: rgba(0, 0, 0, 0.2);
-    background: $base-grey-30;
+    background: $base-grey-70;
 }
-/* 
-pre::-webkit-scrollbar-track {
+
+::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
     border-radius: 0;
     background: rgba(0, 0, 0, 0.1);
 }
-*/
+
 // 未渲染代码块的样式
 :not(pre) > code,
 pre {

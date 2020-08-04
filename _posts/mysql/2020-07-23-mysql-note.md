@@ -1,13 +1,11 @@
 ---
 layout:     post
-title:      "mysql-note"
+title:      "mysql note"
 date:       2020-07-23
 category:   Mysql
 author:     iiwowks
 published:  true
 ---
-
-> * https://cyc2018.github.io/CS-Notes/#/notes/MySQL
 
 # 一、索引
 
@@ -387,3 +385,4 @@ MySQL 提供了 FROM_UNIXTIME() 函数把 UNIX 时间戳转换为日期，并提
 
 <div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/master-slave-proxy.png" width=""> </div><br>
 
+### [参考链接](https://cyc2018.github.io/CS-Notes/#/notes/MySQL)
