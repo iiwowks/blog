@@ -55,7 +55,8 @@ excerpt:   This page contains the curriculum vitae (CV) of the author.
 <br>
 ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3)
-![Vue.js](https://img.shields.io/badge/-Vuejs-black?style=flat-square&logo=vue.js)
+[![leetcode](https://img.shields.io/badge/-Leetcode-FFA119?style=flat-square&logo=leetcode&logoColor=white)](https://leetcode-cn.com/u/iiwowks/)
+<!-- ![Vue.js](https://img.shields.io/badge/-Vuejs-black?style=flat-square&logo=vue.js) -->
 <!--
 ![Bootstrap](https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=bootstrap)
 ![React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react)
