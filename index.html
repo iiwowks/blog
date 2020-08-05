@@ -26,6 +26,7 @@ layout: default
 
 {% assign sorted_cats = site.categories | sort %}
 {% for category in sorted_cats %}
+{% if category[0]!="Leetcode" %}
 {% assign sorted_posts = category[1] | reversed %}
 
 <ul class="category {{ category[0] | uri_escape | downcase | slugify }}">
@@ -51,6 +52,7 @@ layout: default
   {% endunless %}
   {% endfor %}
 </ul>
+{% endif %}
 {% endfor %}
 
 </div><!-- end #content -->
