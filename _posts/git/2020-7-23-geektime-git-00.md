@@ -1,10 +1,11 @@
 ---
 layout:    post
 title:     "git学习"
-date:      2020-08-03
+date:      2020-08-05
 category:  Git
 author:    iiwowks
 published: true
+photoswipe: true
 syntaxhighlight: false
 ---
 
@@ -49,18 +50,16 @@ $ cd your_project
 $ git status // 查看当前状态
 $ git add xxx.html images  // 添加文件或文件夹到暂存区
 $ git commit -m 'Add xxx + img'
+$ git commit -am 'xxx'
 $ git log  // 查看git历史
 $ git add -u // 已被git管理的文件全部提交到暂存区
-```
 
-```
 $ git mv readme readme.md // 重命名
 $ git reset --hard  // 清理暂存区和工作区
 $ git log --oneline  // git log显示为一列
 $ git log --oneline --all -n4 --graph
 $ git log -n4 //查看最近4次历史
-$ git branch  -v
-$ git checkout master // 切换分支
+
 ```
 
 ### .git文件夹
@@ -97,4 +96,30 @@ $ cat master
 67e670c799f97ffa62a09c57eaf0477726f2beb6   /*40位哈希值*/
 ```
 
-###  
+### 对象
+
+* `commit`对象相当于一整个项目（文件、目录）的快照
+* `tree`对象相当于一个文件夹
+* `blob`对象相当于一个文件
+![image-commit](/media/post/git-commit.png)
+
+### 分支
+
+![image](/media/post/git-fenzhi.png)
+
+```git
+$ gitk --all // gitk图形界面工具查看视图
+$ git branch  -v // 查看分支
+$ git branch -d fix_readme  //删除分支
+$ git checkout master // 切换分支
+$ git checkout -b fix_readme master // 基于master的commit创建分支
+```
+
+### 修改massage
+
+```
+$ git commit --amend // 对最近一次提交的massage修改
+$ git rebase -i 父亲commit哈希值 // 对之前的commit修改massage
+```
+
+
