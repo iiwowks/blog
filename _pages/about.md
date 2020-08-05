@@ -22,7 +22,7 @@ excerpt:   This page contains the curriculum vitae (CV) of the author.
         src="https://github-readme-stats.vercel.app/api?username=iiwowks&show_icons=true&theme=synthwave&hide_title=true" />
 </p>
 
-<details align="center">
+<details align="center" open="open">
     <summary> <b> <samp> Most used languanges </samp></b></summary>
     <samp>
         <img align="middle"
@@ -47,7 +47,7 @@ excerpt:   This page contains the curriculum vitae (CV) of the author.
     </details>
 </div>
 
-<h2 align="middle">skills</h2>
+<h2 align="middle">my skills</h2>
 
 [![Java](https://img.shields.io/badge/-Java-b07219?style=flat-square&logo=java)]({{site.baseurl}}/#java)
 ![Python](https://img.shields.io/badge/-Python-00599C?style=flat-square&logo=python)
