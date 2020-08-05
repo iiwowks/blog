@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "数据结构定义"
+title:      "常见数据结构定义"
 date:       2020-08-02
 category:   Algorithm
 author:     iiwowks
