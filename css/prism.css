@@ -10,9 +10,10 @@ code[class*="language-"],
 pre[class*="language-"] {
 	color: black;
 	background: none;
-	text-shadow: 0 1px white;
+	/* text-shadow: 0 1px white; */
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	font-size: 1em;
+	/* font-size: 1em; */
+	font-size: 13px;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;

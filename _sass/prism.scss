@@ -87,8 +87,9 @@ pre {
     padding: .1em .2em;
     border-radius: .3em;
     white-space: normal;
-    // border: 1px solid #eeeeee;
-    background-color: yellow;
+    border: 1px solid #eeeeee;
+    color: #b32585;
+    background-color: rgba(212,53,159,0.03);
 }
 
 .token.comment,
