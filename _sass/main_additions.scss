@@ -9,14 +9,14 @@
     bottom: auto;
 
 }
-.toggle-code-block {
+.hide-code-block {
     display: block;
     background-image: url('../assets/avatar.jpg');
     border-radius: 25px;
     top: 90px;
     bottom: auto;
 }
-.toggle-code-block:focus{
+.hide-code-block:focus{
     outline: none;
 }
 

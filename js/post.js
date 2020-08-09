@@ -12,32 +12,17 @@
     var windowHeight = win.height();
     var timeoutHandler;
 
-    /*     
-    //toggle java code block     
-    $('.toggle-code-block').click(function () {
-      var toggleJavaCodeBlock = $('.language-java');
-      const jq_display = toggleJavaCodeBlock.css("display");
+    //hide all code block     
+    $('.hide-code-block').click(function () {
+      var hideCodeBlock = $('pre');
+      const jq_display = hideCodeBlock.css("display");
       if (jq_display != "block") {
-        toggleJavaCodeBlock.css({ "display": "block" });
+        hideCodeBlock.css({ "display": "block" });
       }
       else {
-        toggleJavaCodeBlock.css({ "display": "none" });
+        hideCodeBlock.css({ "display": "none" });
       }
     }); 
-    */
-
-
-    // toggle all code block
-    $('.toggle-code-block').click(function () {
-      var toggleAllCodeBlock = $('pre');
-      const jq_maxHight = toggleAllCodeBlock.css("max-height");
-      if (jq_maxHight != "none") {
-        toggleAllCodeBlock.css({ "max-height": "none" });
-      }
-      else {
-        toggleAllCodeBlock.css({ "max-height": "0.5rem", "overflow-y": "hidden" });
-      }
-    });
 
     /*
       Fix video size.

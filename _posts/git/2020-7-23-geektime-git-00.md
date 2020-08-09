@@ -1,7 +1,7 @@
 ---
 layout:    post
 title:     "git学习"
-date:      2020-08-05
+date:      2020-08-08
 category:  Git
 author:    iiwowks
 published: true
@@ -122,4 +122,19 @@ $ git commit --amend // 对最近一次提交的massage修改
 $ git rebase -i 父亲commit哈希值 // 对之前的commit修改massage
 ```
 
+## rebase指令
 
+* `git rebase --abort`退出rebase状态
+
+### 修改历史git commit message
+
+1. 命令行中输入`git rebase -i father_id`
+2. `i`进入编辑模式
+3. 修改 `pick xxxid message` 中的`pick`为`reword`，更改message
+4. `esc`退出编辑  `shift + :`
+5. 输入`wq!` 按`回车键`
+
+![image](/media/post/git-rebase.png)
+
+> [参考文章1](https://www.jianshu.com/p/5ce5a709ba44)
+> [参考文章2](https://www.jianshu.com/p/4a8f4af4e803)

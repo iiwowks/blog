@@ -5,7 +5,7 @@ date:       2020-08-03
 category:   Others
 author:     iiwowks
 published:  true
-syntaxhighlight: false
+syntaxhighlight: true
 ---
 
 ### servlet访问方法
