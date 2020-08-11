@@ -6,13 +6,41 @@ category:   Leetcode
 author:     iiwowks
 published:  true
 photoswipe: true
-syntaxhighlight: false
+syntaxhighlight: true
 ---
+
+
+## 二叉树节点定义
+
+```java
+public class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+    TreeNode() {}
+    TreeNode(int val) {
+        this.val = val;
+    }
+    TreeNode(int val, TreeNode left, TreeNode right){
+        this.val  = val;
+        this.left  = left;
+        this.right  = right;
+    }
+}
+```
+
+## 深、广度优先搜索常用代码片段
+
+```java
+// 用于上下左右遍历的增量dx, dy
+int[] dx = {1, -1, 0, 0};
+int[] dy = {0, 0, 1, -1};
+```
 
 
 ## 跳表（Skip List）
 
-### 给链表加速
+给链表加速
 
 * 升维
 * 用时间换空间
@@ -45,22 +73,3 @@ syntaxhighlight: false
 - [Java 源码分析（LinkedList）](http://developer.classpath.org/doc/java/util/LinkedList-source.html)
 - LRU Cache - Linked list：[ LRU 缓存机制](http://leetcode-cn.com/problems/lru-cache)
 - Redis - `Skip List`：[跳跃表](http://redisbook.readthedocs.io/en/latest/internal-datastruct/skiplist.html)、[为啥 Redis使用跳表（Skip List）而不是使用Red-Black？](http://www.zhihu.com/question/20202931)
-
-## 二叉树节点定义
-
-```java
-public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode() {}
-    TreeNode(int val) {
-        this.val = val;
-    }
-    TreeNode(int val, TreeNode left, TreeNode right){
-        this.val  = val;
-        this.left  = left;
-        this.right  = right;
-    }
-}
-```
