@@ -11,7 +11,7 @@
     var win = $(window);
     var windowHeight = win.height();
     var timeoutHandler;
-
+    
     //hide all code block     
     $('.hide-code-block').click(function () {
       var hideCodeBlock = $('pre');
@@ -66,7 +66,7 @@
 
       if (figureList.length) {
         figureList.each(function (index, item) {
-          var img = $(item).find('img');
+            var img = $(item).find('img');
           var src = img.attr('src');
           var newImg = new Image();
           newImg.addEventListener('load', function () {
@@ -145,9 +145,9 @@
       Disqus comments
     */
     function loadDisqusComments() {
-      if (config.disqus_shortname != '') {
+      if(config.disqus_shortname != '') {
         var disqus_shortname = config.disqus_shortname;
-        (function () {
+        (function() {
           var dsq = document.createElement('script');
           dsq.type = 'text/javascript'; dsq.async = true;
           dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
@@ -158,7 +158,7 @@
       }
     }
 
-    $('.view-comments').click(function () {
+    $('.view-comments').click(function(){
       loadDisqusComments();
       $(this).fadeOut(400);
     });

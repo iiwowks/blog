@@ -15,7 +15,7 @@ language: zh # default language of the blog. Language codes: http://www.w3school
 baseurl: "" # the subpath of your site, e.g. /blog
 url:     "https://iiwowks.github.io" # the base hostname & protocol for your site. Have a look at robots.txt as well!
 permalink: /:categories/:title
-cover:     /assets/cover1.jpg
+cover:     /assets/cover2.jpg
 disqus_shortname: "iiwowks"
 
 # Build settings
