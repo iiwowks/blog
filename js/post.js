@@ -11,18 +11,38 @@
     var win = $(window);
     var windowHeight = win.height();
     var timeoutHandler;
+    var hideCodeBlock = $('.hide-code-block');
     
-    //hide all code block     
-    $('.hide-code-block').click(function () {
-      var hideCodeBlock = $('pre');
-      const jq_display = hideCodeBlock.css("display");
+    /*
+      hide all code block     
+     */
+    win.on('scroll', function () {
+      var top = $(this).scrollTop();
+      if (top > windowHeight / 3 && !hideCodeBlock.is(':visible')) {
+        hideCodeBlock.fadeIn();
+      }
+      if (top <= windowHeight / 3 && hideCodeBlock.is(':visible')) {
+        hideCodeBlock.fadeOut();
+      }
+      if (timeoutHandler) {
+        clearTimeout(timeoutHandler);
+      }
+
+      hideCodeBlock.removeClass('less-opacity');
+      timeoutHandler = setTimeout(function () {
+        hideCodeBlock.addClass('less-opacity');
+      }, 2000);
+    });
+    hideCodeBlock.on('click', function () {
+      var hideCodeBlockPre = $('pre');
+      const jq_display = hideCodeBlockPre.css("display");
       if (jq_display != "block") {
-        hideCodeBlock.css({ "display": "block" });
+        hideCodeBlockPre.css({ "display": "block" });
       }
       else {
-        hideCodeBlock.css({ "display": "none" });
+        hideCodeBlockPre.css({ "display": "none" });
       }
-    }); 
+    });
 
     /*
       Fix video size.
@@ -138,29 +158,6 @@
     });
     goToTop.on('click', function () {
       $('body, html').animate({ scrollTop: 0 });
-    });
-
-
-    /*
-      Disqus comments
-    */
-    function loadDisqusComments() {
-      if(config.disqus_shortname != '') {
-        var disqus_shortname = config.disqus_shortname;
-        (function() {
-          var dsq = document.createElement('script');
-          dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          dsq.setAttribute('data-timestamp', + new Date());
-          (document.getElementsByTagName('head')[0] ||
-            document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-      }
-    }
-
-    $('.view-comments').click(function(){
-      loadDisqusComments();
-      $(this).fadeOut(400);
     });
 
   });
