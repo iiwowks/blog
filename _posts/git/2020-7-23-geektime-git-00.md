@@ -11,7 +11,7 @@ syntaxhighlight: false
 
 ### 配置user信息
 
-```
+```bash
 $ git config --global user.name 'your_name'
 $ git config --global user.email 'your_email'
 $ git config --global --list
@@ -19,7 +19,7 @@ $ git config --global --list
 
 ### config的三个作用域
 
-```
+```bassh
 $ git config --local //local 只对某个仓库有效
 $ git config --global //global 对当前用户所有仓库有效
 $ git config --system  //system 对系统所有登录的用户有效
@@ -29,14 +29,14 @@ $ git config --system  //system 对系统所有登录的用户有效
 
 1.  把已有的项目代码纳入git管理
 
-```
+```bash
 $ cd folder
 $ git init
 ```
 
 2. 新建的项目直接用git管理
 
-```
+```bash
 $ cd 某个文件夹
 $ git init your_project
 $ cd your_project
@@ -46,7 +46,7 @@ $ cd your_project
 
 ![](/media/post/git-zancun.png)
 
-```
+```bash
 $ git status // 查看当前状态
 $ git add xxx.html images  // 添加文件或文件夹到暂存区
 $ git commit -m 'Add xxx + img'
@@ -107,7 +107,7 @@ $ cat master
 
 ![image](/media/post/git-fenzhi.png)
 
-```git
+```bash
 $ gitk --all // gitk图形界面工具查看视图
 $ git branch  -v // 查看分支
 $ git branch -d fix_readme  //删除分支
@@ -117,7 +117,7 @@ $ git checkout -b fix_readme master // 基于master的commit创建分支
 
 ### 修改massage
 
-```
+```bash
 $ git commit --amend // 对最近一次提交的massage修改
 $ git rebase -i 父亲commit哈希值 // 对之前的commit修改massage
 ```

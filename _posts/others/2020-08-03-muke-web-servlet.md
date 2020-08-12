@@ -189,7 +189,7 @@ Cookie[] cs = request.getCookies();
 * Session的数据存储在Tomcat服务器的内存中，具有时效性
 * Session通过浏览器Cookie的SessionID值提取用户数据
 * `request.getSession()` - 获取Session对象
-* `get|set|removeAttribute()` - 获取|设置|删除Session属性
+* `get|set|removeAttribute()` - 获取/设置/删除Session属性
 * `setMaxInactiveInterval` - 设置Session超时时间
 
 实现原理：
