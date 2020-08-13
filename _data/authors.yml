@@ -3,9 +3,9 @@ iiwowks:
   # used for author lookup in posts and for first two characters in the about page back button
   initial:      iiwowks
   # used to display author name
-  name:         zheng junan
+  name:         Junan Zheng
   # defines location of cover image in about page
-  cover:        /assets/book-reading-library-literature.jpg
+  cover:        /assets/cover1.jpg
   # author picture
   picture:      /assets/icon.jpg
   # text below author name in posts
@@ -14,7 +14,7 @@ iiwowks:
   location:     China
   # link to the author of a post
   #website:      "http://jwillmer.de/about"
-  email:        s1029871348@gmail.com
+  email:        1029871348@qq.com
   twitter:      iiwowks
   linkedin:     https://www.linkedin.com/in/zhengjunan/
   xing:

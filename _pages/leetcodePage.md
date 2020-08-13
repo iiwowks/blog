@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: "/leetcode/"
+permalink: "/leetcode"
 ---
 
 <div id="content" class="content">

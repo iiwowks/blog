@@ -1,0 +1,25 @@
+iiwowks:
+    profile: "快乐地复制粘贴中"
+    skills:
+        - "Java, Python"
+        - "JavaScript, jQuery, HTML5, CSS"
+        - "Vue.js, Mybatis"
+        - "Markdown, Git"
+    education:
+        - time:             "2016 - 2020"
+          location:         "西北大学"
+          description:      "软件工程"
+    employment:
+        - time:             "2020.07 - Now"
+          location:         "China WuHan"
+          company:          "待业中"
+          # position:         "java developer"
+          # responsibilities:
+            # - "null"
+    projects:
+        - time:             "2 months in 2020"
+          # team:             "Team of 1"
+          title:            "Jekyll Blog"
+          technologies:     "JavaScript, HTML5, CSS, jQuery"
+          responsibilities:
+            - "copy and paste"
