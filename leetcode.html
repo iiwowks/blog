@@ -1,11 +1,9 @@
 ---
-layout: headless
+layout:    default
 permalink: "/leetcode"
-author: iiwowks
 ---
 
 <div id="content" class="content">
-
   <ul class="category {{ category[0] | uri_escape | downcase | slugify }}">
     {% for post in site.posts %}
     {% if post.category == "Leetcode" %}
@@ -26,5 +24,4 @@ author: iiwowks
     {% endif %}
     {% endfor %}
   </ul>
-
 </div><!-- end #content -->
