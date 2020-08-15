@@ -1,22 +1,25 @@
 ---
 layout:     post
-title:      "Vue介绍"
-date:       2020-08-11
+title:      "Vue基础"
+date:       2020-08-14
 category:   Vue
 author:     iiwowks
-published:  true
+published:  false
 photoswipe: true
+syntaxhighlight: false
 ---
+
+## 介绍
 
 ### `输入vue+tab键`: 模板快速生成
 
-## 环境搭建
+### 环境搭建
 
 * 浏览器：`chrome`
 * IDE: `Visual Studio Code`
 * `Node.js 8.9+, npm`
 
-```
+```bash
 命令行工具cli安装：
 npm install -g @vue/cli
 # OR
@@ -67,18 +70,53 @@ var vm = new Vue({
 
 ### 数据和方法
 
-一个实例中的data对象中的所有property加入到vue响应式系统中。
+一个实例中的`data`对象中的所有property加入到vue响应式系统中。property变化时，视图会产生响应。
 
+* `data`对象
 
+```js
+data: {
+    newTodoText: '',
+    visitCount: 0,
+    todos: []
+}
+```
 
-## 组件的组成-属性
+* `Object.freeze()`:会阻止修改现有的property
 
-![属性](/media/post/vue-shuxin.png)
+```js
+var obj = {
+  foo: 'bar'
+}
 
-## 组建的组成-事件
+Object.freeze(obj)
 
-![事件](/media/post/vue-shijian.png)
+new Vue({
+  el: '#app',
+  data: obj
+})
+```
 
-## 插槽
+* 实例property和方法,使用前缀`$`可以与用户定义的property区分开
 
-![插槽](/media/post/vue-chacao.png)
+### 实例生命周期钩子
+
+* `created`钩子: 用来在一个实例被创建之后执行代码
+* `mounted`
+* `updated`
+* `destroyed`
+
+```js
+new Vue({
+    data: {
+        a: 1
+    },
+    created: function() {
+        // this 指向vm实例
+        console.log('a is: ' + this.a)   // => "a is: 1"
+    }
+})
+```
+
+![生命周期图示](https://cn.vuejs.org/images/lifecycle.png)
+
