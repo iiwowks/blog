@@ -1,18 +1,15 @@
 ---
 layout: default
 permalink: "/leetcode"
+author: iiwowks
+title: leetcode
 ---
 
 <div id="content" class="content">
 
-  {% assign sorted_cats = site.categories | sort %}
-  {% for category in sorted_cats %}
-  {% if category[0]=="Leetcode" %}
-  {% assign sorted_posts = category[1] | reversed %}
-
   <ul class="category {{ category[0] | uri_escape | downcase | slugify }}">
-    {% for post in sorted_posts %}
-    {% unless post.draft %}
+    {% for post in site.posts %}
+    {% if post.category == "Leetcode" %}
     <li>
       <div class="article">
         <article class="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -27,10 +24,10 @@ permalink: "/leetcode"
         </article>
       </div>
     </li>
-    {% endunless %}
+    {% endif %}
     {% endfor %}
   </ul>
-  {% endif %}
-  {% endfor %}
+
+</div><!-- end #content -->
 
 </div><!-- end #content -->
