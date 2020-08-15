@@ -1,19 +1,18 @@
 iiwowks:
     profile: "快乐地复制粘贴中"
     skills:
-        - "Java, Python"
-        - "JavaScript, jQuery, HTML5, CSS"
-        - "Vue.js, Mybatis"
-        - "Markdown, Git"
+        - "JAVA, PYTHON"
+        - "JavaScript, JQuery, HTML5, CSS"
+        - "Vue.js, Git"
     education:
         - time:             "2016 - 2020"
-          location:         "西北大学"
-          description:      "软件工程"
+          location:         "Northwest University"
+          description:      "Software Engineering"
     employment:
         - time:             "2020.07 - Now"
           location:         "China WuHan"
-          company:          "待业中"
-          # position:         "java developer"
+          company:          "Null"
+          # position:         "Java Developer"
           # responsibilities:
             # - "null"
     projects:

@@ -1,4 +1,17 @@
 @media only screen and (max-width: 500px) {
+    .main-header .page-title a {
+        font-size: 15vw;
+    }
+
+    dl {
+        display: flex;
+        flex-direction: column;
+    }
+
+    dl dt {
+        width: auto;
+        text-align: left;
+    }
 
     hr {
         margin: 1.75em 0;

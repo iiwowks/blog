@@ -1,8 +1,8 @@
 ---
-layout:    about
+layout: about
 permalink: "/about"
-author:    iiwowks
-title:     Junan Zheng CV
+author: iiwowks
+title: Junan Zheng CV
 ---
 
 {% assign cv = site.data.cv[page.author] %}
@@ -17,9 +17,57 @@ title:     Junan Zheng CV
     </div>
     <div class="content">
         <ul>
-            {% for skill in cv.skills %}
-            <li>{{ skill }}</li>
-            {% endfor %}
+            <a href="{{site.baseurl}}/#java">
+                <img src="https://img.shields.io/badge/-Java-b07219?style=flat-square&logo=java">
+            </a>
+            <a href="{{site.baseurl}}/#python">
+                <img src="https://img.shields.io/badge/-Python-00599C?style=flat-square&logo=python">
+            </a>
+            <a href="{{site.baseurl}}/#javascript">
+                <img src="https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript">
+            </a>
+            <a href="{{site.baseurl}}/#html">
+                <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white">
+            </a>
+            <a href="{{site.baseurl}}/#CSS3">
+                <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3">
+            </a>
+            <a href="https://leetcode-cn.com/u/iiwowks/">
+                <img
+                    src="https://img.shields.io/badge/-Leetcode-FFA119?style=flat-square&logo=leetcode&logoColor=white">
+            </a>
+            <a href="{{site.baseurl}}/#mysql">
+                <img src="https://img.shields.io/badge/-MySQL-green?style=flat-square&logo=mysql">
+            </a>
+            <a href="{{site.baseurl}}/#git">
+                <img src="https://img.shields.io/badge/-Git-black?style=flat-square&logo=git">
+            </a>
+            <a href="{{site.baseurl}}/#markdown">
+                <img src="https://img.shields.io/badge/-Markdown-181717?style=flat-square&logo=markdown">
+            </a>
+            <a href="{{site.baseurl}}/#vue">
+                <img src="https://img.shields.io/badge/-Vuejs-black?style=flat-square&logo=vue.js">
+            </a>
+            <!--        
+            <a href="{{site.baseurl}}/#bootstrap">
+                <img src="https://img.shields.io/badge/-Bootstrap-563D7C?style=flat-square&logo=bootstrap">
+            </a>
+            <a href="{{site.baseurl}}/#react">
+                <img src="https://img.shields.io/badge/-React-black?style=flat-square&logo=react">
+            </a>
+            <a href="{{site.baseurl}}/#Angular">
+                <img src="https://img.shields.io/badge/-Angular-DD0031?style=flat-square&logo=angular">
+            </a>
+            <a href="{{site.baseurl}}/#Node.js">
+                <img src="https://img.shields.io/badge/-Nodejs-black?style=flat-square&logo=Node.js">
+            </a>
+            <a href="{{site.baseurl}}/#Github">
+                <img src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github">
+            </a>
+            <a href="{{site.baseurl}}/#Linux">
+                <img src="https://img.shields.io/badge/-Linux-FFA119?style=flat-square&logo=linux"> 
+            -->
+            </a>
         </ul>
     </div>
 </div>
@@ -28,7 +76,7 @@ title:     Junan Zheng CV
     <div class="title icon-library">
         <h2>Education</h2>
     </div>
-    {% for entry in cv.education %}   
+    {% for entry in cv.education %}
     <dl>
         <dt class="time">{{entry.time}}</dt>
         <dd>
