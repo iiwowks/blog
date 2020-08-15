@@ -1,8 +1,7 @@
 ---
-layout: default
+layout: headless
 permalink: "/leetcode"
 author: iiwowks
-sitemap: false
 ---
 
 <div id="content" class="content">
