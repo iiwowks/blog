@@ -76,3 +76,5 @@ latex:         true
 14. **Accents and diacritical marks** Use `\hat` for a single symbol ˆ*x*, `\widehat` for a larger formula ^*x**y*. If you make it too wide, it will look silly. Similarly, there are `\bar` ˉ*x* and `\overline` ¯*x**y**z*, and `\vec` →*x* and `\overrightarrow` →*x**y* and `\overleftrightarrow` ↔*x**y*. For dots, as in *d**d**x**x*˙*x*=˙*x*2+*x*¨*x*, use `\dot` and `\ddot`.
 
 15. Special characters used for MathJax interpreting can be escaped using the `\` character: `\$` $, `\{` {, `\_` _, etc. If you want `\` itself, you should use `\backslash` ∖, because `\\` is for a new line.
+
+### [转载文章](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)

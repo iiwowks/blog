@@ -624,22 +624,22 @@ $$
 - 例子：
 
 ```
-$ \begin{matrix} 1 & 2 \\ 3 & 4 \\ \end{matrix} $
-$ \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ \end{pmatrix} $
-$ \begin{bmatrix} 1 & 2 \\ 3 & 4 \\ \end{bmatrix} $
-$ \begin{Bmatrix} 1 & 2 \\ 3 & 4 \\ \end{Bmatrix} $
-$ \begin{vmatrix} 1 & 2 \\ 3 & 4 \\ \end{vmatrix} $
-$ \begin{Vmatrix} 1 & 2 \\ 3 & 4 \\ \end{Vmatrix} $
+$$ \begin{matrix} 1 & 2 \\ 3 & 4 \\ \end{matrix} $$
+$$ \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ \end{pmatrix} $$
+$$ \begin{bmatrix} 1 & 2 \\ 3 & 4 \\ \end{bmatrix} $$
+$$ \begin{Bmatrix} 1 & 2 \\ 3 & 4 \\ \end{Bmatrix} $$
+$$ \begin{vmatrix} 1 & 2 \\ 3 & 4 \\ \end{vmatrix} $$
+$$ \begin{Vmatrix} 1 & 2 \\ 3 & 4 \\ \end{Vmatrix} $$
 ```
 
 - 显示：
 
-$ \begin{matrix} 1 & 2 \\ 3 & 4 \\ \end{matrix} $
-$ \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ \end{pmatrix} $
-$ \begin{bmatrix} 1 & 2 \\ 3 & 4 \\ \end{bmatrix} $
-$ \begin{Bmatrix} 1 & 2 \\ 3 & 4 \\ \end{Bmatrix} $
-$ \begin{vmatrix} 1 & 2 \\ 3 & 4 \\ \end{vmatrix} $
-$ \begin{Vmatrix} 1 & 2 \\ 3 & 4 \\ \end{Vmatrix} $
+$$ \begin{matrix} 1 & 2 \\ 3 & 4 \\ \end{matrix} $$
+$$ \begin{pmatrix} 1 & 2 \\ 3 & 4 \\ \end{pmatrix} $$
+$$ \begin{bmatrix} 1 & 2 \\ 3 & 4 \\ \end{bmatrix} $$
+$$ \begin{Bmatrix} 1 & 2 \\ 3 & 4 \\ \end{Bmatrix} $$
+$$ \begin{vmatrix} 1 & 2 \\ 3 & 4 \\ \end{vmatrix} $$
+$$ \begin{Vmatrix} 1 & 2 \\ 3 & 4 \\ \end{Vmatrix} $$
 
 ## 3．如何输入带省略符号的矩阵
 

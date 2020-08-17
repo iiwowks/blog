@@ -5,7 +5,9 @@ date:       2020-08-17
 category:   Leetcode
 author:     iiwowks
 published:  true
-syntaxhighlight: true
+syntaxhighlight: false
+photoswipe: true
+latex:      true
 ---
 
 ### [110. 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
@@ -24,9 +26,16 @@ syntaxhighlight: true
 ```
 
 <mark>解题思路</mark>:
-函数
 
-`javascript`
+方法一：自顶向下的递归, 定义函数`height`用来计算二叉树中的任意一个节点p的高度：
+
+$$
+    height(p) =
+    \begin{cases}
+    0, & \text{p是空节点}\\
+    max(height(p.left), height(p.right)) + 1, & \text{p是非空节点}
+    \end{cases}
+$$
 
 ```java
 class Solution {
