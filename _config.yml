@@ -21,14 +21,11 @@ disqus_shortname: "iiwowks"
 # Build settings
 markdown: kramdown
 kramdown:
-  # 数式はKaTeXでレンダリングする
-  math_engine: mathjax # katex
+  math_engine: mathjax # katex进行公式渲染
   math_engine_opts: {}
-  # 数式で'が別文字に変換するのを防ぐための設定
-  smart_quotes: ["apos", "apos", "quot", "quot"]
-  # Prism.jsでシンタックスハイライトするため
+  smart_quotes: ["apos", "apos", "quot", "quot"] # 防止公式被渲染成其它样式
   syntax_highlighter_opts:
-    disable: true
+    disable: true # 使用prism.js进行语法高亮
 include:
   - _pages
 exclude:
@@ -40,8 +37,6 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
-  - new.sh
-  - server.sh
   - Makefile
   - LICENSE
   - README.md
@@ -54,8 +49,6 @@ keep_files:
   - js
   - media
 plugins:
-  - jekyll-mentions
-  - jekyll-feed
   - jekyll-sitemap
   - jekyll-redirect-from
 

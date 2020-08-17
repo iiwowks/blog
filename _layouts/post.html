@@ -3,7 +3,6 @@ layout: default
 ---
 <main class="content" role="main">
   <article class="post single-post" itemscope itemtype="http://schema.org/BlogPosting">
-
     <header class="post-header short-diver">
       <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
       <section class="post-meta">
@@ -12,11 +11,9 @@ layout: default
         <a href="{{ site.baseurl }}/#{{ page.category | uri_escape | downcase | slugify }}">{{ page.category }}</a>
       </section>
     </header>
-
     <section class="post-content short-diver" itemprop="articleBody">
       {{content}}
     </section>
-
     {% if jekyll.environment == "production" %}
     {% if page.comments %}
     <div class="comments">
@@ -25,9 +22,7 @@ layout: default
     </div>
     {% endif %}
     {% endif %}
-
   </article>
 </main>
-
 {% include photoswipe.html %}
 {% include post_scripts.html %}

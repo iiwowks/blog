@@ -254,6 +254,14 @@ img {
   -ms-user-select: none;
 }
 
+.gist {
+    width: 90%;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+}
+
 // Fix prism.css
 .token.operator {
   background: none;

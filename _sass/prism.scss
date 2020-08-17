@@ -3,7 +3,7 @@ code,
 pre {
     color: black;
     background: none;
-    text-shadow: 0 1px white;
+    // text-shadow: 0 1px white;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     text-align: left;
     white-space: pre-wrap;
@@ -42,7 +42,6 @@ code::selection, code ::selection {
 }
 
 pre {
-    padding: 1em;
     margin: 1em 0;
 }
 
@@ -69,8 +68,8 @@ pre {
     border-radius: .3em;
     white-space: normal;
     border: 1px solid #eeeeee;
-    color: #b32585;
-    background-color: rgba(212,53,159,0.03);
+    color: black;
+	background-color: #e4e6e8;
 }
 
 .token.comment,
