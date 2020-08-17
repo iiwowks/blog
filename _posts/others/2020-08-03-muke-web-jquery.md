@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "jquery学习"
+title:      "jQuery学习"
 date:       2020-08-03
 category:   Others
 author:     iiwowks
@@ -9,19 +9,6 @@ syntaxhighlight: true
 ---
 
 ### 选择器
-
-```html
-<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
-<script type="text/javascript">
-    document.getElementById("btnSelect").onclick = function () {
-        var selector = document.getElementById("txtSelector").value;
-        // jquery选择器
-        // 选择器
-        $("*").removeClass("highlight"); //选择所有去除highlight类
-        $(selector).addClass("highlight");//选择selector添加highlight类
-    }
-</script>
-```
 
 jquery是一个轻量级js库，核心是**选择器**，用于获取页面元素
 

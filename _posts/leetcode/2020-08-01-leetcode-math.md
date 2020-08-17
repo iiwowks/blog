@@ -25,3 +25,5 @@ syntaxhighlight: false
 1. 如果num1 和 num2 之一是0，直接返回0。
 2. 如果都不是零，从右往左遍历乘数，将乘数的每一位与被乘数相乘得到对应的结果，再将每次得到的结果累加。
         num2 除了最低位以外，其他的每一位运算结果补零。
+
+<script src="https://gist.github.com/iiwowks/1a2f5010644cb2cc37e277f15e50b97a.js"></script>

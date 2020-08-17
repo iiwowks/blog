@@ -8,7 +8,9 @@ author:     iiwowks
 published:  true
 ---
 
-[toc]
+
+* TOC
+{:toc}
 
 ### 質問
 

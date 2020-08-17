@@ -1,14 +1,15 @@
 ---
 layout:        post
-title:         "Markdown测试用例"
+title:         "markdown测试用例"
 date:          2020-07-26
 category:      Markdown
 author:        iiwowks
 published:     true
-photoswipe:    true
 latex:         true
-# comments:      true
 ---
+
+* Toc
+{:toc}
 
 ---
 __Advertisement :)__
@@ -371,5 +372,17 @@ This is *red*{: style="color: red"}.
 ```
 
 This is *red*{: style="color: red"}.
+
+### CheckBox
+
+- [ ] tasklist1
+- [x] tasklist1
+- [x] tasklist1
+
+### Github Gist
+
+<script src="https://gist.github.com/iiwowks/7011d71276e4ada8a8ddf90610171808.js"></script>
+
+<script src="https://gist.github.com/iiwowks/5f6f4c848ea6f0d713481e44c2d2afee.js"></script>
 
 ***

@@ -1,10 +1,10 @@
 ---
-layout:    post
-title:     "git学习"
-date:      2020-08-08
-category:  Git
-author:    iiwowks
-published: true
+layout:     post
+title:      "geektime git学习"
+date:       2020-08-08
+category:   Git
+author:     iiwowks
+published:  true
 photoswipe: true
 syntaxhighlight: false
 ---

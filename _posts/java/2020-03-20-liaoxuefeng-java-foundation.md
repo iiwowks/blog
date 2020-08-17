@@ -9,7 +9,8 @@ photoswipe: true
 syntaxhighlight: true
 ---
 
-## Java核心类
+* TOC
+{:toc}
 
 ### Character类
 
@@ -47,9 +48,7 @@ scan.close();
 * 1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符
 * 2、可以获得空白
 
-## 集合
-
-### List
+### 集合-List
 
 * `ArrayList`通过使用数组存储，数组满时，会创建一个更大的新数组，然后把旧数组中的所有元素复制到新数组
 * `LinkedList`通过链表实现
@@ -72,7 +71,7 @@ scan.close();
   * `toArray(T[])`传入一个类型相同的Array，泛型参数`<T>`
 * `List.of(T)``Array`变`List` ,返回一个只读`List`
 
-### Map
+### 集合-Map
 
 * `Map<K, V>`
 * `put(K key, V value)`
