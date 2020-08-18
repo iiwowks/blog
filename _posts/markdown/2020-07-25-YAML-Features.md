@@ -31,7 +31,7 @@ published:     true
 | `redirect_from: /PATH`      |               重定向                |                           |
 | `published: false`          |            是否发布页面             |                           |
 | `latex: false`              |              公式渲染               |         **false**         |
-| `photoswipe: true`          |            图像放大功能             |         **true**          |
+| `photoswipe: true`          |            图像放大功能             |         **false**         |
 | `syntaxhighlight: true`     |           代码块语法高亮            |         **true**          |
 | `tags`                      |           只在posts中使用           |                           |
 | `keywords`                  |           只在pages中使用           |                           |
