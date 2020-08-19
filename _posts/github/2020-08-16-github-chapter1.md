@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "github入门与实践 - 01"
+title:      "github入门与实践"
 date:       2020-08-16
 category:   Github
 author:     iiwowks

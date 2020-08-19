@@ -83,6 +83,6 @@ For example, `\sum_{i=0}^\infty i^2` is $\sum_{i=0}^\infty i^2$. Similarly, `\pr
 
 14. **<mark>Accents and diacritical marks</mark>** Use `\hat` for a single symbol $\hat x$, `\widehat` for a larger formula $\widehat {xy}$. If you make it too wide, it will look silly. Similarly, there are `\bar` $\bar{x}$ and `\overline` $\overline{xyz}$, and `\vec` $\vec{x}$ and `\overrightarrow` $\overrightarrow{xy}$ and `\overleftrightarrow` $\overleftrightarrow{xyz}$. For dots, as in $\dot{x}$ $\ddot{x}$, use `\dot` and `\ddot`.
 
-15. **<mark>Special characters</mark>** used for MathJax interpreting can be escaped using the `\` character: `\$` $ \$ $, `\{` $\{${, `\_` $\_$, etc. If you want `\` itself, you should use `\backslash` $\backslash$, because `\\` is for a new line.
+15. **<mark>Special characters</mark>** used for MathJax interpreting can be escaped using the `\` character: `\$` $ \$ $, `\{` $\{$, `\_` $\_$, etc. If you want `\` itself, you should use `\backslash` $\backslash$, because `\\` is for a new line.
 
 ### [转载文章](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)
