@@ -817,11 +817,6 @@ $$
 
 在一些情况下，条件表达式中某些行的行高为非标准高度，此时使用 `\\[2ex]` 语句代替该行末尾的 `\\` 来让编辑器适配。
 
-- 例子：
-     | 不适配[2ex] |
-     | :---------: |
-     |             |
-
 ```
 $$
 f(n) = 
@@ -832,9 +827,15 @@ f(n) =
 $$
 ```
 
-| 适配[2ex] |
-| :-------: |
-|           |
+- 显示：
+
+$$
+f(n) = 
+\begin{cases}
+\frac{n}{2},  & \text{if $n$ is even} \\
+3n+1, & \text{if $n$ is odd}
+\end{cases}
+$$
 
 ```
 $$
@@ -847,16 +848,17 @@ $$
 ```
 
 - 显示：
-     |                                                                                                                                                                   不适配[2ex]                                                                                                                                                                   |
-     | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-     | ![f(n) = \begin{cases} \frac{n}{2}, & \text{if $n$ is even} \\ 3n+1, & \text{if $n$ is odd} \end{cases}](https://math.jianshu.com/math?formula=f(n)%20%3D%20%5Cbegin%7Bcases%7D%20%5Cfrac%7Bn%7D%7B2%7D%2C%20%26%20%5Ctext%7Bif%20%24n%24%20is%20even%7D%20%5C%5C%203n%2B1%2C%20%26%20%5Ctext%7Bif%20%24n%24%20is%20odd%7D%20%5Cend%7Bcases%7D) |
 
-| 适配[2ex] |
-| :-------: |
-|    $$     |
+$$
+f(n) = 
+\begin{cases}
+\frac{n}{2},  & \text{if $n$ is even} \\[2ex]
+3n+1, & \text{if $n$ is odd}
+\end{cases}
+$$
 
-**一个 `[ex]` 指一个 "X-Height"，即x字母高度。可以根据情况指定多个 `[ex]`，如 `[3ex]`、`[4ex]` 等。**
- 其实可以在任何地方使用 `\\[2ex]` 语句，只要你觉得合适。
+**一个 `[ex]` 指一个 "X-Height"，即x字母高度。可以根据情况指定多个 `[ex]`，如 `[3ex]`、`[4ex]` 等。**  
+其实可以在任何地方使用 `\\[2ex]` 语句，只要你觉得合适。
 
 # 五、数组与表格使用参考
 
@@ -876,8 +878,107 @@ n & \text{左对齐} & \text{居中对齐} & \text{右对齐} \\
 3 & -20 & 2000 & 1+10i
 \end{array}
 ```
+- 显示：
+
+$$
+    \begin{array}{c|lcr}
+    n & \text{左对齐} & \text{居中对齐} & \text{右对齐} \\
+    \hline
+    1 & 0.24 & 1 & 125 \\
+    2 & -1 & 189 & -8 \\
+    3 & -20 & 2000 & 1+10i
+    \end{array}
+$$
 
 ## 2．如何输入一个嵌套的数组或表格
+
+多个数组/表格可 互相嵌套 并组成一组数组/一组表格。
+使用嵌套前必须声明 $$ 符号。
+
+例子：
+
+```
+$$
+% outer vertical array of arrays 外层垂直表格
+\begin{array}{c}
+    % inner horizontal array of arrays 内层水平表格
+    \begin{array}{cc}
+        % inner array of minimum values 内层"最小值"数组
+        \begin{array}{c|cccc}
+        \text{min} & 0 & 1 & 2 & 3\\
+        \hline
+        0 & 0 & 0 & 0 & 0\\
+        1 & 0 & 1 & 1 & 1\\
+        2 & 0 & 1 & 2 & 2\\
+        3 & 0 & 1 & 2 & 3
+        \end{array}
+    &
+        % inner array of maximum values 内层"最大值"数组
+        \begin{array}{c|cccc}
+        \text{max}&0&1&2&3\\
+        \hline
+        0 & 0 & 1 & 2 & 3\\
+        1 & 1 & 1 & 2 & 3\\
+        2 & 2 & 2 & 2 & 3\\
+        3 & 3 & 3 & 3 & 3
+        \end{array}
+    \end{array}
+    % 内层第一行表格组结束
+    \\
+    % inner array of delta values 内层第二行Delta值数组
+        \begin{array}{c|cccc}
+        \Delta&0&1&2&3\\
+        \hline
+        0 & 0 & 1 & 2 & 3\\
+        1 & 1 & 0 & 1 & 2\\
+        2 & 2 & 1 & 0 & 1\\
+        3 & 3 & 2 & 1 & 0
+        \end{array}
+        % 内层第二行表格组结束
+\end{array}
+$$
+```
+- 显示：
+
+$$
+% outer vertical array of arrays 外层垂直表格
+\begin{array}{c}
+    % inner horizontal array of arrays 内层水平表格
+    \begin{array}{cc}
+        % inner array of minimum values 内层"最小值"数组
+        \begin{array}{c|cccc}
+        \text{min} & 0 & 1 & 2 & 3\\
+        \hline
+        0 & 0 & 0 & 0 & 0\\
+        1 & 0 & 1 & 1 & 1\\
+        2 & 0 & 1 & 2 & 2\\
+        3 & 0 & 1 & 2 & 3
+        \end{array}
+    &
+        % inner array of maximum values 内层"最大值"数组
+        \begin{array}{c|cccc}
+        \text{max}&0&1&2&3\\
+        \hline
+        0 & 0 & 1 & 2 & 3\\
+        1 & 1 & 1 & 2 & 3\\
+        2 & 2 & 2 & 2 & 3\\
+        3 & 3 & 3 & 3 & 3
+        \end{array}
+    \end{array}
+    % 内层第一行表格组结束
+    \\
+    % inner array of delta values 内层第二行Delta值数组
+        \begin{array}{c|cccc}
+        \Delta&0&1&2&3\\
+        \hline
+        0 & 0 & 1 & 2 & 3\\
+        1 & 1 & 0 & 1 & 2\\
+        2 & 2 & 1 & 0 & 1\\
+        3 & 3 & 2 & 1 & 0
+        \end{array}
+        % 内层第二行表格组结束
+\end{array}
+$$
 
 ## 3．如何输入一个方程组
 
@@ -914,19 +1015,24 @@ $$
 - 例子：
 
 ```
+$$
 \begin{cases}
-a_1x+b_1y+c_1z=d_1 \\
-a_2x+b_2y+c_2z=d_2 \\
+a_1x+b_1y+c_1z=d_1 &\\
+a_2x+b_2y+c_2z=d_2 &\\
 a_3x+b_3y+c_3z=d_3
 \end{cases}
+$$
 ```
 
 - 显示：
-     \begin{cases}
-     a_1x+b_1y+c_1z=d_1 \
-     a_2x+b_2y+c_2z=d_2 \
-     a_3x+b_3y+c_3z=d_3
-     \end{cases}
+
+$$
+\begin{cases}
+a_1x+b_1y+c_1z=d_1 &\\
+a_2x+b_2y+c_2z=d_2 &\\
+a_3x+b_3y+c_3z=d_3
+\end{cases}
+$$
 
 # 六、连分数使用参考
 
@@ -993,39 +1099,6 @@ x = a_0 + \frac{1^2}{a_1+}
 $$
 
 连分数通常都太大以至于不易排版，所以建议在连分数前后声明 `$$` 符号，或使用像 `[a0;a1,a2,a3,…]` 一样的紧缩记法。
-
-# 七、交换图表使用参考
-
-## 1．如何输入一个交换图表
-
-使用一行 `$ \require{AMScd} $` 语句来允许交换图表的显示。
- 声明交换图表后，语法与矩阵相似，在开头使用 `begin{CD}`，在结尾使用 `end{CD}`，在中间插入图表元素，每个元素之间插入 `&` ，并在每行结尾处使用 `\\` 。
-
-- 例子：
-
-```
-$\require{AMScd}$
-\begin{CD}
-    A @>a>> B\\
-    @V b V V\# @VV c V\\
-    C @>>d> D
-\end{CD}
-```
-
-其中，`@>>>` 代表右箭头、`@<<<` 代表左箭头、`@VVV` 代表下箭头、`@AAA` 代表上箭头、`@=` 代表水平双实线、`@|` 代表竖直双实线、`@.`代表没有箭头。
- 在 `@>>>` 的 `>>>` 之间任意插入文字即代表该箭头的注释文字。
-
-- 例子：
-
-```
-\begin{CD}
-    A @>>> B @>{\text{very long label}}>> C \\
-    @. @AAA @| \\
-    D @= E @<<< F
-\end{CD}
-```
-
-在本例中， "very long label"自动延长了它所在箭头以及对应箭头的长度。
 
 ------
 
