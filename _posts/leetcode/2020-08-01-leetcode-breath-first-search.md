@@ -1,13 +1,16 @@
 ---
 layout:     post
 title:      "Breath First Search"
-date:       2020-08-12
+date:       2020-08-20
 category:   Leetcode
 author:     iiwowks
 published:  true
 photoswipe: true
 syntaxhighlight: false
 ---
+
+### [529. 扫雷游戏](https://leetcode-cn.com/problems/minesweeper/)
+
 
 ### [133. 克隆图](https://leetcode-cn.com/problems/clone-graph/hints/)
 
