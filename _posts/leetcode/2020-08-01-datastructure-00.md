@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Data Structures"
-date:       2020-08-02
+date:       2020-08-24
 category:   Leetcode
 author:     iiwowks
 published:  true
@@ -9,6 +9,87 @@ photoswipe: true
 syntaxhighlight: true
 ---
 
+
+## BST二叉搜索树
+
+```java
+class BSTree {
+    TreeNode root = null;
+
+    // 查找二叉搜索树
+    public TreeNode searchBST(TreeNode root, int val) {
+        if (root == null || val == root.val) {
+            return root;
+        }
+        return val < root.val ? searchBST(root.left, val) : searchBST(root.right, val);
+    }
+    // 插入二叉搜索树
+    public TreeNode insertIntoBST(TreeNode root, int val) {
+        if (root == null) {
+            return new TreeNode(val);
+        }
+        if (val > root.val) {
+            root.right = insertIntoBST(root.right, val); // 插入右节点
+        }
+        else if (val == root.val) {
+            return root; // 值相同时，跳过这次插入
+        }
+        else {
+            root.left = insertIntoBST(root.left, val); // 插入左节点
+        }
+        return root;
+    }
+
+    // 一步右，然后到最左下端
+    public int successor(TreeNode root) {
+        root = root.right;
+        while (root.left != null) {
+            root = root.left;
+        }
+        return root.val;
+    }
+    // 一步左，然后到最右下端
+    public int predecessor(TreeNode root) {
+        root = root.left;
+        while (root.right != null) {
+            root = root.right;
+        }
+        return root.val;
+    }
+
+    // 删除搜索二叉树节点
+    public TreeNode deleteNode(TreeNode root, int key) {
+        if (root == null) {
+            return null;
+        }
+        // 从右子树中删除
+        if (key > root.val) {
+            root.right = deleteNode(root.right, key);
+        }
+        // 从左子树中删除
+        else if (key < root.val) {
+            root.left = deleteNode(root.left, key);
+        }
+        // key == root.val的时候
+        else {
+            // 叶节点
+            if (root.left == null && root.right == null){
+                root = null;
+            }
+            // 非叶节点，并有右孩子
+            else if (root.right != null) {
+                root.val = successor(root); // 右子树中最左下端节点值，作为
+                root.right = deleteNode(root.right, root.val); // 从右子树中删除
+            }
+            else {
+                root.val = predecessor(root);
+                root.left = deleteNode(root.left, root.val);
+            }
+        }
+        return root;
+    }
+}
+```
 
 ## 二叉树节点定义
 
@@ -36,7 +117,6 @@ public class TreeNode {
 int[] dx = {1, -1, 0, 0};
 int[] dy = {0, 0, 1, -1};
 ```
-
 
 ## 跳表（Skip List）
 
