@@ -1,13 +1,23 @@
 ---
 layout:     post
 title:      "Recursion"
-date:       2020-08-22
+date:       2020-08-25
 category:   Leetcode
 author:     iiwowks
 published:  true
 photoswipe: true
 syntaxhighlight: false
 ---
+
+### [491. 递增子序列](https://leetcode-cn.com/problems/increasing-subsequences/)
+
+```
+给定一个整型数组, 你的任务是找到所有该数组的递增子序列，递增子序列的长度至少是2。
+```
+
+<mark>方法二：递归枚举+ 减枝</mark>
+
+<script src="https://gist.github.com/iiwowks/21fedbf5226880a18714eb54fec5e222.js"></script>
 
 ### [679. 24 点游戏](https://leetcode-cn.com/problems/24-game/)
 

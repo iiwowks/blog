@@ -6,7 +6,7 @@ category:   Leetcode
 author:     iiwowks
 published:  true
 photoswipe: true
-syntaxhighlight: true
+syntaxhighlight: false
 ---
 
 
