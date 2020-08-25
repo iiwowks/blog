@@ -12,9 +12,26 @@
     var windowHeight = win.height();
     var timeoutHandler;
     var hideCodeBlock = $('.hide-code-block');
-    
+    var showLanguageName = $("code[class*='language-']");
+
+    /* 
+      Show code language
+     */
+    showLanguageName.on('mouseenter', function () {
+      var languageName_attr = $(this).attr('class'); // get attribute
+      text = "<span class='code-language-name'><strong>"+languageName_attr+"</strong></span>";
+      $(this).prepend(text);
+
+    });
+    showLanguageName.on('mouseleave', function () {
+      $('.code-language-name').remove();
+    }); 
+    showLanguageName.on('dblclick', function () {
+      $(this).css({"font-size": "14px"}); // change code font size
+    });
+
     /*
-      hide all code block     
+      Hide all code block     
      */
     win.on('scroll', function () {
       var top = $(this).scrollTop();
