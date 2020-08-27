@@ -51,7 +51,8 @@
       }, 2000);
     });
     hideCodeBlock.on('click', function () {
-      var hideCodeBlockPre = $('pre');
+      // var hideCodeBlockPre = $('pre');
+      var hideCodeBlockPre = $("code[class*='language-']");
       const jq_display = hideCodeBlockPre.css("display");
       if (jq_display != "block") {
         hideCodeBlockPre.css({ "display": "block" });

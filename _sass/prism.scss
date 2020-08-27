@@ -61,7 +61,10 @@ pre {
     // border-top: 1px solid #eeeeee;
     // border-bottom: 1px solid #eeeeee;
 }
+
+/* custom style */
 pre code[class*="language-"] {
+    display: block;
     border-top-right-radius: 6px;
     font-size: 12px;
 }
