@@ -11,9 +11,32 @@ syntaxhighlight: false
 
 > **[Java13 API Document](https://docs.oracle.com/en/java/javase/13/docs/api/index.html)**
 
-### 杂项————用于熟悉API
+## 杂项————用于熟悉API 记录碰到的不熟悉的库函数
 
 ```java
+/* entrySet() */
+public Set<Map.Entry<K,​V>> entrySet(); // 返回key-value键值Set集合
+
+
+/* keySet() */
+public Set<K> keySet(); // 返回key键值的Set集合
+
+
+/* getOrDefault(key, value) */
+// Returns the value to which the specified key is mapped, or defaultValue if this map contains no mapping for the key.
+default V getOrDefault​(Object key, V defaultValue)
+
+
+
+/* swap() */
+/*
+ * @Param list: list
+ * @Param i: index
+ * @Param j: index
+ */
+public static void swap(List<?> list, int i, int j); // 集合中的元素交换位置
+
+
 /* String trim() */
 string.trim(); // 去除首尾所有空格
 
@@ -31,7 +54,7 @@ set.hash(value);
 
 
 /* Map */
-Map<K, V> map = new HashMao<>();// new TreeMap(); // key-value对，key
+Map<K, V> map = new HashMap<>();// new TreeMap(); // key-value对，key
 map.set(key, value);
 map.get(key);
 map.has(key)
@@ -44,7 +67,10 @@ static String valueOf​(Object obj); //Returns the string representation of the
 
 
 /* Stack */
+// Java的集合类没有单独的Stack接口，因为有个遗留类名字就叫Stack，出于兼容性考虑，所以没办法创建Stack接口，只能用Deque接口来“模拟”一个Stack
 Stack<Character> stack = new Stack<>();
+// 现在推荐使用Deque模拟Stack
+Deque<Integer> stack = new ArrayDeque<Integer>();
 
 
 /* StringBuilder */
@@ -69,52 +95,7 @@ if (scan.hasNext()) {
 scan.close();
 ```
 
-
 ![image0](https://uploadfiles.nowcoder.com/images/20190917/334190970_1568705196598_5712E31C0DD632882CA35FC6B748EEE5)
-
-### 集合-List
-
-* `ArrayList`通过使用数组存储，数组满时，会创建一个更大的新数组，然后把旧数组中的所有元素复制到新数组
-* `LinkedList`通过链表实现
-* `List<E>`接口方法：
-  * 在末尾添加一个元素：`void add(E e)`
-  * 在指定索引添加一个元素：`void add(int index, E e)`
-  * 删除指定索引的元素：`int remove(int index)`
-  * 删除某个元素：`int remove(Object e)`
-  * 获取指定索引的元素：`E get(int index)`
-  * 获取链表大小（包含元素的个数）：`int size()`
-  * `List.of()`创建List
-  * `get(int)`遍历List
-  * `List`实例调用 `iterator()`创建`Iterator`迭代器对象访问List
-* `Iterator`对象有两个方法：
-  * `boolean hasNext()` 判断是否有下一个元素
-  * `E next()` 返回下一个元素
-* `Iterable`接口定义了一个`Iterator<E> iterator()`方法，集合类必须返回一个`Iterator`实例
-* 把`List`变成`Array`
-  * `toArray()`返回一个`Object[]`数组， 会丢失类型信息
-  * `toArray(T[])`传入一个类型相同的Array，泛型参数`<T>`
-* `List.of(T)``Array`变`List` ,返回一个只读`List`
-
-### 集合-Map
-
-* `Map<K, V>`
-* `put(K key, V value)`
-* `V get(K key)`
-* `boolean containsKey(K key)`
-* `keySet()`返回`Set`集合
-* `entrySet()`返回`key*value`映射
-
-### EnumMap
-
-* `key`对象是`enum`类型
-* 内部以一个十分紧凑的数组存储value，据`enum`类型的key直接定位到内部数组的索引，并不需要计算`hashCode()`
-
-### TreeMap
-
-* 内部对`key`排序
-* `SortedMap`在遍历时严格按照Key的顺序遍历，最常用的实现类是`TreeMap`；
-* 作为`SortedMap`的Key必须实现`Comparable`接口，或者传入`Comparator`；
-* 要严格按照`compare()`规范实现比较逻辑，否则，`TreeMap`将不能正常工作。
 
 ## 正则表达式
 
