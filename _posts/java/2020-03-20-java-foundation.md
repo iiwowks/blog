@@ -30,9 +30,9 @@ default V getOrDefault​(Object key, V defaultValue)
 
 /* swap() */
 /*
- * @Param list: list
- * @Param i: index
- * @Param j: index
+ * @param list list
+ * @param i  index
+ * @param j  index
  */
 public static void swap(List<?> list, int i, int j); // 集合中的元素交换位置
 

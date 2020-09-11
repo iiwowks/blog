@@ -9,6 +9,8 @@ photoswipe: true
 syntaxhighlight: false
 ---
 
+![image](/media/post/git-cheatSheet.jpg)
+
 ### 配置user信息
 
 ```bash
