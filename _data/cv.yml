@@ -1,24 +1,10 @@
 iiwowks:
-    profile: "闻道有先后  术业有专攻"
-    skills:
-        - "JAVA, PYTHON"
-        - "JavaScript, JQuery, HTML5, CSS"
-        - "Vue.js, Git"
-    education:
-        - time:             "2016 - 2020"
-          location:         "Northwest University"
-          description:      "Software Engineering"
-    employment:
-        - time:             "2020.07 - Now"
-          location:         "China WuHan"
-          company:          "Null"
-          # position:         "Java Developer"
-          # responsibilities:
-            # - "null"
-    projects:
-        - time:             "2 months in 2020"
-          # team:             "Team of 1"
-          title:            "Jekyll Blog"
-          technologies:     "JavaScript, HTML5, CSS, jQuery"
-          responsibilities:
-            - "copy and paste"
+  profile: "闻道有先后  术业有专攻"
+  skills:
+    - "JAVA, PYTHON"
+    - "JavaScript, JQuery, HTML5, CSS"
+    - "Vue.js, Git"
+  education:
+    - time: "2016 - 2020"
+      location: "Northwest University"
+      description: "Software Engineering"

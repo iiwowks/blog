@@ -1,24 +1,24 @@
 # Fallback if nothing is specified
 iiwowks:
   # used for author lookup in posts and for first two characters in the about page back button
-  initial:      iiwowks
+  initial: iiwowks
   # used to display author name
-  name:         Junan Zheng
+  name: zheng junan
   # defines location of cover image in about page
-  cover:        /assets/cover1.jpg
+  cover: /assets/cover1.jpg
   # author picture
-  picture:      /assets/icon.jpg
+  picture: /assets/icon.jpg
   # text below author name in posts
-  bio:          
+  bio:
   # used to display location of the author
-  location:     China
+  location: Japan
   # link to the author of a post
   #website:      "http://jwillmer.de/about"
-  email:        1029871348@qq.com
-  twitter:      iiwowks
-  linkedin:     https://www.linkedin.com/in/zhengjunan/
+  email: s1029871348@gmail.com
+  twitter: iiwowks
+  linkedin: zhengjunan
   xing:
-  github:       iiwowks
+  github: zhengjunan
   stackoverflow:
   facebook:
   gplus:
