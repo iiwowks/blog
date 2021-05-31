@@ -82,7 +82,7 @@ trigger manager 是一个 GRC Trigger 框架创建的组件，将 API 操作转�
 
 可以通过 xml 配置 trigger， xml 文件作为一个资源对象存储在 OpenPages 仓库中作为一个系统文件。
 
-其中一个叫 ‘\_trigger_config.xml ‘ 的配置文件
+其中一个叫 `_trigger_config.xml` 的配置文件
 
 在 xxxxx 路径下存储 trigger 配置文件。
 
@@ -96,23 +96,23 @@ trigger manager 是一个 GRC Trigger 框架创建的组件，将 API 操作转�
 
 对 jar 包的更新和配置更新，需要服务器重启才可以生效
 
-定义一个新的规则， 添加<grcTrigger>标签 <rule> 多个<eventHandler>, <attribute>
+定义一个新的规则， 添加`<grcTrigger>`标签 `<rule> `多个`<eventHandler>`, `<attribute>`
 
 xml 配置文件的基本格式：
 
 定义了 rule 和 event handler。
 
-通过<grcTrigger>标签和<rule>，<eventHandler>标签
+通过`<grcTrigger>`标签和`<rule>`，`<eventHandler>`标签
 
-<attribute>标签是用来，在 rule 和 event handler 处理类之中 传配置参数的
+`<attribute>`标签是用来，在 rule 和 event handler 处理类之中 传配置参数的
 
 ## GRCTrigger 属性：
 
-<grcTrigger>标签属性 需要定义 trigger 并且包含的 rule 和 event handler
+`<grcTrigger>`标签属性 需要定义 trigger 并且包含的 rule 和 event handler
 
 ## rule 属性
 
-<rule>标签配置将会使用哪个类
+`<rule>`标签配置将会使用哪个类
 
 attribute 用来配置 rule 的行为
 
@@ -146,13 +146,11 @@ rule Attribute
 
 使用一个 mechanism configuration 来强制 trigger 顺序化执行。 步骤：
 
-\1. 在 OpenPages 仓库中找到*trigger_config*.xml 文件
+1. 在 OpenPages 仓库中找到*trigger_config*.xml 文件
 
-\2. 定位到需要顺序执行的 trigger 定义的位置
+2. 定位到需要顺序执行的 trigger 定义的位置
 
-\3. 定位到<eventHandler>标签
-
-\4. 。。。。。
+3. 定位到`<eventHandler>`标签
 
 ## 实现一个 Rule
 
@@ -264,7 +262,7 @@ Lifecycle trigger transition element and Properties
 
 使用条件元素检查每个变更。只能有一个条件元素添加到所有变更和默认配置中，
 
-使用标签<condition> </condition>包裹
+使用标签`<condition> </condition>`包裹
 
 ## 样例工程
 
@@ -306,29 +304,18 @@ Content Type Match Trigger
 
 ## Lagacy Out-of-the-Box Actions
 
-Abstract Resource Trigger Action
-
-Abstract Change Control Trigger Action
-
-Change Control Flag Trigger Action
-
-Abstract Exchange Rate As Of Date Trigger Action
-
-Abstract Picklist Dependency Trigger Action
-
-Picklist Value Mapping trigger action
-
-Abstract Resource Based Send Email Action
-
-Defalut Sent Email To User In Field Action
-
-Send Email To User In Field Action
-
-Set Field Value From Another Field Action
-
-Set Field Value From Parent Action
-
-Abstract Resource Copy Trigger Action
+- Abstract Resource Trigger Action
+- Abstract Change Control Trigger Action
+- Change Control Flag Trigger Action
+- Abstract Exchange Rate As Of Date Trigger Action
+- Abstract Picklist Dependency Trigger Action
+- Picklist Value Mapping trigger action
+- Abstract Resource Based Send Email Action
+- Defalut Sent Email To User In Field Action
+- Send Email To User In Field Action
+- Set Field Value From Another Field Action
+- Set Field Value From Parent Action
+- Abstract Resource Copy Trigger Action
 
 最佳实践：
 
