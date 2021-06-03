@@ -2,8 +2,8 @@
 layout: post
 title: "spring boot learn"
 date: 2020-08-01
-category: Java
-author: iiwowks
+category: Backend
+author: zhengjunan
 published: true
 photoswipe: true
 syntaxhighlight: true

@@ -2,8 +2,8 @@
 layout: post
 title: "Interview question"
 date: 2020-03-20
-category: Java
-author: iiwowks
+category: Backend
+author: zhengjunan
 published: true
 photoswipe: true
 syntaxhighlight: true

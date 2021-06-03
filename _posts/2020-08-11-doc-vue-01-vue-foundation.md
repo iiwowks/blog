@@ -1,10 +1,10 @@
 ---
-layout:     post
-title:      "Vue基础"
-date:       2020-08-14
-category:   Vue
-author:     iiwowks
-published:  false
+layout: post
+title: "Vue基础"
+date: 2020-08-14
+category: Frontend
+author: zhengjunan
+published: false
 photoswipe: true
 syntaxhighlight: false
 ---
@@ -15,9 +15,9 @@ syntaxhighlight: false
 
 ### 环境搭建
 
-* 浏览器：`chrome`
-* IDE: `Visual Studio Code`
-* `Node.js 8.9+, npm`
+- 浏览器：`chrome`
+- IDE: `Visual Studio Code`
+- `Node.js 8.9+, npm`
 
 ```bash
 命令行工具cli安装：
@@ -45,16 +45,16 @@ npm run serve
 
 ![](https://cn.vuejs.org/images/components.png)
 
-### 创建一个vue实例
+### 创建一个 vue 实例
 
 ```js
 var vm = new Vue({
-    // 选项
-})
+  // 选项
+});
 ```
 
-创建一个vue实例后，传入一个选项对象，利用选项创建想要的行为。  
-一个vue应用通过一个`new Vue`创建**根Vue实例**, 以及可选的嵌套的、可复用的组件树组成。
+创建一个 vue 实例后，传入一个选项对象，利用选项创建想要的行为。  
+一个 vue 应用通过一个`new Vue`创建**根 Vue 实例**, 以及可选的嵌套的、可复用的组件树组成。
 
 ```js
 // todo应用组件树
@@ -70,9 +70,9 @@ var vm = new Vue({
 
 ### 数据和方法
 
-一个实例中的`data`对象中的所有property加入到vue响应式系统中。property变化时，视图会产生响应。
+一个实例中的`data`对象中的所有 property 加入到 vue 响应式系统中。property 变化时，视图会产生响应。
 
-* `data`对象
+- `data`对象
 
 ```js
 data: {
@@ -82,41 +82,40 @@ data: {
 }
 ```
 
-* `Object.freeze()`:会阻止修改现有的property
+- `Object.freeze()`:会阻止修改现有的 property
 
 ```js
 var obj = {
-  foo: 'bar'
-}
+  foo: "bar",
+};
 
-Object.freeze(obj)
+Object.freeze(obj);
 
 new Vue({
-  el: '#app',
-  data: obj
-})
+  el: "#app",
+  data: obj,
+});
 ```
 
-* 实例property和方法,使用前缀`$`可以与用户定义的property区分开
+- 实例 property 和方法,使用前缀`$`可以与用户定义的 property 区分开
 
 ### 实例生命周期钩子
 
-* `created`钩子: 用来在一个实例被创建之后执行代码
-* `mounted`
-* `updated`
-* `destroyed`
+- `created`钩子: 用来在一个实例被创建之后执行代码
+- `mounted`
+- `updated`
+- `destroyed`
 
 ```js
 new Vue({
-    data: {
-        a: 1
-    },
-    created: function() {
-        // this 指向vm实例
-        console.log('a is: ' + this.a)   // => "a is: 1"
-    }
-})
+  data: {
+    a: 1,
+  },
+  created: function () {
+    // this 指向vm实例
+    console.log("a is: " + this.a); // => "a is: 1"
+  },
+});
 ```
 
 ![生命周期图示](https://cn.vuejs.org/images/lifecycle.png)
-

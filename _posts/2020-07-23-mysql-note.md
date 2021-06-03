@@ -1,14 +1,14 @@
 ---
-layout:     post
-title:      "mysql note"
-date:       2020-07-23
-category:   Mysql
-author:     iiwowks
-published:  true
+layout: post
+title: "mysql note"
+date: 2020-07-23
+category: Backend
+author: zhengjunan
+published: true
 ---
 
-* TOC
-{:toc}
+- TOC
+  {:toc}
 
 # 一、索引
 
@@ -132,9 +132,7 @@ FROM payment;
 ```
 
 ```html
-   staff_id_selectivity: 0.0001
-customer_id_selectivity: 0.0373
-               COUNT(*): 16049
+staff_id_selectivity: 0.0001 customer_id_selectivity: 0.0373 COUNT(*): 16049
 ```
 
 ### 4. 前缀索引
@@ -185,7 +183,7 @@ Explain 用来分析 SELECT 查询语句，开发人员可以通过分析 Explai
 
 ### 1. 减少请求的数据量
 
-- 只返回必要的列：最好不要使用 SELECT * 语句。
+- 只返回必要的列：最好不要使用 SELECT \* 语句。
 - 只返回必要的行：使用 LIMIT 语句来限制返回的数据。
 - 缓存重复查询的数据：使用缓存可以避免在数据库中进行查询，特别在要查询的数据经常被重复查询时，缓存带来的查询性能提升将会是非常明显的。
 
@@ -368,9 +366,9 @@ MySQL 提供了 FROM_UNIXTIME() 函数把 UNIX 时间戳转换为日期，并提
 
 主要涉及三个线程：binlog 线程、I/O 线程和 SQL 线程。
 
--   **binlog 线程**  ：负责将主服务器上的数据更改写入二进制日志（Binary log）中。
--   **I/O 线程**  ：负责从主服务器上读取二进制日志，并写入从服务器的中继日志（Relay log）。
--   **SQL 线程**  ：负责读取中继日志，解析出主服务器已经执行的数据更改并在从服务器中重放（Replay）。
+- **binlog 线程** ：负责将主服务器上的数据更改写入二进制日志（Binary log）中。
+- **I/O 线程** ：负责从主服务器上读取二进制日志，并写入从服务器的中继日志（Relay log）。
+- **SQL 线程** ：负责读取中继日志，解析出主服务器已经执行的数据更改并在从服务器中重放（Replay）。
 
 <div align="center"> <img src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/master-slave.png" width=""> </div><br>
 

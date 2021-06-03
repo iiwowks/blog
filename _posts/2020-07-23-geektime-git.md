@@ -1,17 +1,17 @@
 ---
-layout:     post
-title:      "geektime git学习"
-date:       2020-08-08
-category:   Git
-author:     iiwowks
-published:  true
+layout: post
+title: "geektime git学习"
+date: 2020-08-08
+category: Others
+author: zhengjunan
+published: true
 photoswipe: true
 syntaxhighlight: false
 ---
 
 ![image](/media/post/git-cheatSheet.jpg)
 
-### 配置user信息
+### 配置 user 信息
 
 ```bash
 $ git config --global user.name 'your_name'
@@ -19,7 +19,7 @@ $ git config --global user.email 'your_email'
 $ git config --global --list
 ```
 
-### config的三个作用域
+### config 的三个作用域
 
 ```bassh
 $ git config --local //local 只对某个仓库有效
@@ -27,16 +27,16 @@ $ git config --global //global 对当前用户所有仓库有效
 $ git config --system  //system 对系统所有登录的用户有效
 ```
 
-### 建git仓库
+### 建 git 仓库
 
-1.  把已有的项目代码纳入git管理
+1.  把已有的项目代码纳入 git 管理
 
 ```bash
 $ cd folder
 $ git init
 ```
 
-2. 新建的项目直接用git管理
+2. 新建的项目直接用 git 管理
 
 ```bash
 $ cd 某个文件夹
@@ -64,7 +64,7 @@ $ git log -n4 //查看最近4次历史
 
 ```
 
-### .git文件夹
+### .git 文件夹
 
 ```
 $ ls -al
@@ -84,7 +84,9 @@ drwxr-xr-x 1 IIWOWKS 197609    0  7月 26 10:22 logs/
 drwxr-xr-x 1 IIWOWKS 197609    0  7月 26 12:02 objects/
 drwxr-xr-x 1 IIWOWKS 197609    0  7月 26 12:03 refs/
 ```
+
 在`.git/refs/ `文件夹下
+
 ```
 drwxr-xr-x 1 IIWOWKS 197609 0  7月 26 12:03 ./
 drwxr-xr-x 1 IIWOWKS 197609 0  8月  3 17:48 ../
@@ -92,7 +94,9 @@ drwxr-xr-x 1 IIWOWKS 197609 0  7月 26 12:02 heads/   /*分支,一个独立的�
 drwxr-xr-x 1 IIWOWKS 197609 0  7月 26 12:03 remotes/
 drwxr-xr-x 1 IIWOWKS 197609 0  7月 26 10:20 tags/    /*标签,项目的里程碑*/
 ```
+
 在`.git/refs/heads/`文件夹下
+
 ```
 $ cat master
 67e670c799f97ffa62a09c57eaf0477726f2beb6   /*40位哈希值*/
@@ -100,10 +104,10 @@ $ cat master
 
 ### 对象
 
-* `commit`对象相当于一整个项目（文件、目录）的快照
-* `tree`对象相当于一个文件夹
-* `blob`对象相当于一个文件
-![image-commit](/media/post/git-commit.png)
+- `commit`对象相当于一整个项目（文件、目录）的快照
+- `tree`对象相当于一个文件夹
+- `blob`对象相当于一个文件
+  ![image-commit](/media/post/git-commit.png)
 
 ### 分支
 
@@ -117,26 +121,25 @@ $ git checkout master // 切换分支
 $ git checkout -b fix_readme master // 基于master的commit创建分支
 ```
 
-### 修改massage
+### 修改 massage
 
 ```bash
 $ git commit --amend // 对最近一次提交的massage修改
 $ git rebase -i 父亲commit哈希值 // 对之前的commit修改massage
 ```
 
-## rebase指令
+## rebase 指令
 
-* `git rebase --abort`退出rebase状态
+- `git rebase --abort`退出 rebase 状态
 
-### 修改历史git commit message
+### 修改历史 git commit message
 
 1. 命令行中输入`git rebase -i father_id`
 2. `i`进入编辑模式
-3. 修改 `pick xxxid message` 中的`pick`为`reword`，更改message
-4. `esc`退出编辑  `shift + :`
+3. 修改 `pick xxxid message` 中的`pick`为`reword`，更改 message
+4. `esc`退出编辑 `shift + :`
 5. 输入`wq!` 按`回车键`
 
 ![image](/media/post/git-rebase.png)
 
-> [参考文章1](https://www.jianshu.com/p/5ce5a709ba44)
-> [参考文章2](https://www.jianshu.com/p/4a8f4af4e803)
+> [参考文章 1](https://www.jianshu.com/p/5ce5a709ba44) > [参考文章 2](https://www.jianshu.com/p/4a8f4af4e803)

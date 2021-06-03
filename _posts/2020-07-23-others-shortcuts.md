@@ -1,13 +1,13 @@
 ---
-layout:     post
-title:      "常用快捷键"
-date:       2020-07-30
-category:   Others
-author:     iiwowks
-published:  true
+layout: post
+title: "常用快捷键"
+date: 2020-07-30
+category: Others
+author: zhengjunan
+published: true
 ---
 
-## vscode快捷键
+## vscode 快捷键
 
 | 快捷键                | 功能                                           |
 | --------------------- | ---------------------------------------------- |
@@ -15,18 +15,18 @@ published:  true
 | `ctrl + shift + 左右` | 选整行                                         |
 | `输入/**+enter`       | 方法说明注释，自动根据参数和返回值生成注释模板 |
 
-## idea快捷键
+## idea 快捷键
 
 | 快捷键                   | 功能                                           |
 | ------------------------ | ---------------------------------------------- |
 | `ctrl + shift + a`       | 快速查找功能                                   |
 | `alt + enter`            | 提示                                           |
-| `ctrl + alt + s`         | setting面板                                    |
+| `ctrl + alt + s`         | setting 面板                                   |
 | `shift + ctrl+alt+u`     | 各种类，接口及继承图，太漂亮了！               |
 | `psvm`                   | 生成`public static void main(String[] args){}` |
 | `sout`                   | 生成`System.out.println();`                    |
-| `fori`                   | for循环                                        |
-| `itli`                   | List迭代                                       |
+| `fori`                   | for 循环                                       |
+| `itli`                   | List 迭代                                      |
 | `ctrl + r`               | 替换关键字                                     |
 | `ctrl + shift + f`       | 全局查找关键字                                 |
 | `ctrl + shift + n`       | 全局查找文件                                   |

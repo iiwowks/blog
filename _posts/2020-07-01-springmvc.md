@@ -2,8 +2,8 @@
 layout: post
 title: "spring mvc learn"
 date: 2020-07-01
-category: Java
-author: iiwowks
+category: Backend
+author: zhengjunan
 published: true
 photoswipe: true
 syntaxhighlight: true

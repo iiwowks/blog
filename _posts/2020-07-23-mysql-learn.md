@@ -1,15 +1,15 @@
 ---
-layout:    post
-title:     "mysql learn"
-date:      2020-07-23
-category:  Mysql
-author:    iiwowks
+layout: post
+title: "mysql learn"
+date: 2020-07-23
+category: Backend
+author: zhengjunan
 published: true
 syntaxhighlight: false
 ---
 
-* TOC
-{:toc}
+- TOC
+  {:toc}
 
 ### 基本操作
 
@@ -680,7 +680,7 @@ end
 3. Replace 语法 如果有记录，则执行 before insert, before delete, after delete, after insert
 ```
 
-### SQL编程
+### SQL 编程
 
 ```sql
 /* SQL编程 */ ------------------
@@ -709,7 +709,7 @@ select into 可以将表中查询获得的数据赋给变量。
 --// 控制结构 ----------
 -- if语句
 if search_condition then
-    statement_list   
+    statement_list
 [elseif search_condition then
     statement_list]
 ...

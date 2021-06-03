@@ -1,11 +1,11 @@
 ---
-layout:        post
-title:         "yaml页面设置"
-date:          2020-08-17
-category:      Markdown
-author:        iiwowks
-published:     true
-latex:         true
+layout: post
+title: "yaml页面设置"
+date: 2020-08-17
+category: Others
+author: zhengjunan
+published: true
+latex: true
 ---
 
 # simple sample
@@ -33,16 +33,17 @@ published:     true
 | `latex: false`              |              公式渲染               |         **false**         |
 | `photoswipe: true`          |            图像放大功能             |         **false**         |
 | `syntaxhighlight: true`     |           代码块语法高亮            |         **true**          |
-| `tags`                      |           只在posts中使用           |                           |
-| `keywords`                  |           只在pages中使用           |                           |
+| `tags`                      |          只在 posts 中使用          |                           |
+| `keywords`                  |          只在 pages 中使用          |                           |
 | `weight`: 5                 |            控制页面顺序             |                           |
 | `visible`: false            |              是否可见               |                           |
-| `language`:  en             |              页面语言               |                           |
+| `language`: en              |              页面语言               |                           |
 | `permalink: "/about/" `     | 设置页面的链接: **base_url/about/** |                           |
 | `feed: false`               |                删了                 |                           |
 | `sitemap: false`            |                删了                 |                           |
 | `comments: true`            |                删了                 |                           |
 
 > 参考文章：
+
 1. [mako's blog](https://github.com/tex2e/blog)
 2. [博客主题](https://github.com/jwillmer/jekyllDecent)
